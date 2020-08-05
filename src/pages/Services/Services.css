@@ -1,0 +1,64 @@
+.Services{
+    height: 100%;
+    width: 100%;
+    padding-top: 40px;
+
+    overflow-x: hidden;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.Services::-webkit-scrollbar { width: 0px; }
+.Services::-webkit-scrollbar-track { background: #666666; }/* Track */
+.Services::-webkit-scrollbar-thumb { background: black; }/* Handle */
+.Services::-webkit-scrollbar-thumb:hover { background: #262626;  }/* Handle on hover */
+
+.Services .section{
+    width: 100%;
+    margin: 5vh 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Services .section .content{
+    width: calc(100% - 100px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Services .section .img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-box-shadow: 5px 5px 10px -5px rgba(211,211,211,1);
+    -moz-box-shadow: 5px 5px 10px -5px rgba(211,211,211,1);
+    box-shadow: 5px 5px 10px -5px rgba(211,211,211,1);
+}
+
+.Services .section .img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Services .section .img{
+        display: none;
+    }
+    .Services .section .content{
+        width: 100%;
+    }
+}

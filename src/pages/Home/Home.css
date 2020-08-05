@@ -1,0 +1,15 @@
+.Home{
+    height: 100%;
+    width: 100%;
+
+    overflow-x: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Home::-webkit-scrollbar { width: 0px; }
+.Home::-webkit-scrollbar-track { background: #666666; }/* Track */
+.Home::-webkit-scrollbar-thumb { background: black; }/* Handle */
+.Home::-webkit-scrollbar-thumb:hover { background: #262626;  }/* Handle on hover */

@@ -1,0 +1,51 @@
+.Navbar{
+    z-index: 1000;
+    
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Navbar a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: color .5s;
+}
+.Navbar a.active{ color: lightsteelblue; }
+.Navbar a:not(.active):hover{ color: darkgray; }
+.Navbar a.active:hover{ color: #81a1ca; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Navbar{
+        padding: 40px 25px 20px 125px;
+        flex-direction: row;
+    }
+
+    .Navbar a{
+        margin: 0 2px;
+        font-size: 14px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Navbar{
+        padding: 30px 75px 30px 200px;
+        flex-direction: row;
+    }
+
+    .Navbar a{
+        margin: 0 4px;
+        font-size: 22px;
+    }
+}
